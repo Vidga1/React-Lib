@@ -1,0 +1,30 @@
+.regular {
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.quote {
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+
+  &::before {
+    content: '"';
+  }
+
+  &::after {
+    content: '"';
+  }
+}
+
+.bold {
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.underline {
+  font-size: 20px;
+  text-decoration: underline;
+}

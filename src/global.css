@@ -5,3 +5,8 @@ body {
       #503285  
     );
   }
+
+  .details-container {
+    overflow: auto; 
+    padding: 10px;
+  }

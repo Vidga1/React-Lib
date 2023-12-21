@@ -1,0 +1,32 @@
+details > summary {
+  padding: 10px;
+  background-color: #12398f; 
+  color: #fcfeff; 
+  border: 2px solid #a2becf; 
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+details > div {
+  border: 2px solid #a2becf; 
+  border-top: none;
+  padding: 15px;
+  background-color: #fff; 
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+details[open] > summary {
+  color: #fff;
+  background-color: #070655; 
+  border-color: #49788c; 
+  border-radius: 5px 5px 0 0;
+}
+
+details > summary::-webkit-details-marker {
+  display: none; 
+}

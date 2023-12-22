@@ -10,6 +10,7 @@
     "start": "webpack serve --mode development",
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
+    "deploy": "gh-pages -d dist",
     "watch": "webpack --mode development --watch",
     "check-ts": "tsc --noEmit",
     "storybook": "storybook dev -p 6006",
@@ -19,9 +20,17 @@
     "loki:update": "loki update",
     "ncu": "npm-check-updates --interactive --format group --doctor"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vidga1/React-Lib.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vidga1/React-Lib/issues"
+  },
+  "homepage": "https://github.com/Vidga1/React-Lib#readme",
   "devDependencies": {
     "@babel/core": "^7.23.5",
     "@babel/preset-env": "^7.23.5",
@@ -45,6 +54,7 @@
     "@typescript-eslint/parser": "^6.13.1",
     "babel-jest": "^29.7.0",
     "babel-loader": "^9.1.3",
+    "gh-pages": "^6.0.0",
     "chromatic": "^10.1.0",
     "clean-webpack-plugin": "^4.0.0",
     "core-js": "^3.33.3",

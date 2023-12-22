@@ -1,32 +1,32 @@
-const path = require("path");
+const path = require('path');
 
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
-const webpack = require("webpack");
+const webpack = require('webpack');
 
-const isDev = process.env.NODE_ENV === "development";
+const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
   entry: {
-    main: path.resolve(__dirname, "./src/index.tsx"),
+    main: path.resolve(__dirname, './src/index.tsx'),
   },
   output: {
     clean: true,
-    filename: "[name].bundle.[chunkhash].js",
-    path: path.resolve(__dirname, "./dist"),
+    filename: '[name].bundle.[chunkhash].js',
+    path: path.resolve(__dirname, './dist'),
   },
   resolve: {
-    extensions: [".js", ".ts", ".jsx", ".tsx"],
+    extensions: ['.js', '.ts', '.jsx', '.tsx'],
   },
   devtool:
-    process.env.NODE_ENV === "production"
-      ? "hidden-source-map"
-      : "eval-source-map",
+    process.env.NODE_ENV === 'production'
+      ? 'hidden-source-map'
+      : 'eval-source-map',
   devServer: {
-    static: path.join(__dirname, "dist"),
+    static: path.join(__dirname, 'dist'),
     compress: true,
     port: 9000,
     hot: true,
@@ -34,21 +34,21 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, "./src/index.html"),
+      template: path.resolve(__dirname, './src/index.html'),
     }),
     ...(isDev
       ? [new MiniCssExtractPlugin()]
       : [
           new MiniCssExtractPlugin({
-            chunkFilename: "[name].[contenthash].css",
-            filename: "[name].[contenthash].css",
+            chunkFilename: '[name].[contenthash].css',
+            filename: '[name].[contenthash].css',
           }),
         ]),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
-      filename: "[name].[hash].css",
+      filename: '[name].[hash].css',
     }),
-    new FaviconsWebpackPlugin("src/assets/img/favicon.png"),
+    new FaviconsWebpackPlugin('src/assets/img/favicon.png'),
     new webpack.HotModuleReplacementPlugin(),
   ],
   module: {
@@ -57,7 +57,7 @@ module.exports = {
         test: /\.(?:js|mjs|cjs|ts|jsx|tsx)$/i,
         exclude: /(node_modules)/,
         use: {
-          loader: "babel-loader",
+          loader: 'babel-loader',
         },
       },
       {
@@ -67,13 +67,13 @@ module.exports = {
             loader: MiniCssExtractPlugin.loader,
           },
           {
-            loader: "css-loader",
+            loader: 'css-loader',
           },
         ],
       },
       {
         test: /\.html$/i,
-        use: "html-loader",
+        use: 'html-loader',
       },
       // {
       //   test: /\.(ttf|woff|woff2|eot)$/i,
@@ -81,9 +81,9 @@ module.exports = {
       // },
       {
         test: /\.(png|svg|jpg|jpeg|gif|ico|gif)$/i,
-        type: "asset/resource",
+        type: 'asset/resource',
         generator: {
-          filename: "images/[name]-[hash][ext]",
+          filename: 'images/[name]-[hash][ext]',
         },
       },
     ],

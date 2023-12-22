@@ -1,12 +1,12 @@
-import React, { FC } from "react";
-import "./Paragraph.css";
-import { textLion, textPantera, textTiger, textWolf } from "../../helpers/text";
+import React, { FC } from 'react';
+import './Paragraph.css';
+import { textLion, textPantera, textTiger, textWolf } from '../../helpers/text';
 
 export enum ParagraphStyles {
-  Regular = "regular",
-  Quote = "quote",
-  Bold = "bold",
-  Underline = "underline",
+  Regular = 'regular',
+  Quote = 'quote',
+  Bold = 'bold',
+  Underline = 'underline',
 }
 
 export interface ParagraphProps {

@@ -1,9 +1,9 @@
-import React from "react";
-import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { HorizontalLine, LineType } from "./HorizontalLine";
+import React from 'react';
+import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { HorizontalLine, LineType } from './HorizontalLine';
 
 export default {
-  title: "React Components Lib/HorizontalLine",
+  title: 'React Components Lib/HorizontalLine',
   component: HorizontalLine,
 } as ComponentMeta<typeof HorizontalLine>;
 

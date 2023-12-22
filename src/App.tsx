@@ -1,18 +1,18 @@
-import React from "react";
+import React from 'react';
 import {
   HorizontalLine,
   LineType,
-} from "./components/HorizontalLine/HorizontalLine";
-import { Heading } from "./components/Heading/Heading";
-import { Details } from "./components/Details/Details";
-import { Paragraph, ParagraphStyles } from "./components/Paragraph/Paragraph";
-import { Image, Float } from "./components/Image/Image";
-import { textLion, textPantera, textTiger, textWolf } from "./helpers/text";
-import lion from "./assets/img/lion.jpg";
-import pantera from "./assets/img/pantera.jpg";
-import tiger from "./assets/img/tiger.jpg";
-import wolf from "./assets/img/wolf.jpg";
-import "./App.css";
+} from './components/HorizontalLine/HorizontalLine';
+import { Heading } from './components/Heading/Heading';
+import { Details } from './components/Details/Details';
+import { Paragraph, ParagraphStyles } from './components/Paragraph/Paragraph';
+import { Image, Float } from './components/Image/Image';
+import { textLion, textPantera, textTiger, textWolf } from './helpers/text';
+import lion from './assets/img/lion.jpg';
+import pantera from './assets/img/pantera.jpg';
+import tiger from './assets/img/tiger.jpg';
+import wolf from './assets/img/wolf.jpg';
+import './App.css';
 
 export default function App() {
   const renderHeadings = () => {
@@ -25,7 +25,7 @@ export default function App() {
 
   return (
     <main className="App">
-      <Heading title={"Библиотека React компонентов"} />
+      <Heading title={'Библиотека React компонентов'} />
       <HorizontalLine />
       <Details title="Пример заголовков">{renderHeadings()}</Details>
       <HorizontalLine />

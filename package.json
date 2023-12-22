@@ -17,8 +17,7 @@
     "loki": "npx loki test",
     "loki:approve": "loki approve",
     "loki:update": "loki update",
-    "ncu": "npm-check-updates --interactive --format group --doctor",
-    "chromatic": "npx chromatic --project-token=chpt_d5177cd2c832c64"
+    "ncu": "npm-check-updates --interactive --format group --doctor"
   },
   "keywords": [],
   "author": "",

@@ -1,6 +1,6 @@
-import React, { FC, useState } from "react";
-import "./Details.css";
-import { heading } from "../../helpers/text";
+import React, { FC, useState } from 'react';
+import './Details.css';
+import { heading } from '../../helpers/text';
 
 export interface DetailsProps {
   title?: string;
@@ -10,7 +10,7 @@ export interface DetailsProps {
 
 export const Details: FC<DetailsProps> = ({
   title = heading,
-  text = "",
+  text = '',
   children,
 }) => {
   const [details, setDetails] = useState(false);

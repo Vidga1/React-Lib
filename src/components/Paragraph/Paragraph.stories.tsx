@@ -1,14 +1,14 @@
-import React from "react";
-import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Paragraph, ParagraphStyles } from "./Paragraph";
-import { textLion, textPantera, textTiger, textWolf } from "../../helpers/text";
+import React from 'react';
+import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { Paragraph, ParagraphStyles } from './Paragraph';
+import { textLion, textPantera, textTiger, textWolf } from '../../helpers/text';
 
 export default {
-  title: "React Components Lib/Paragraph",
+  title: 'React Components Lib/Paragraph',
   component: Paragraph,
   argTypes: {
     fontStyle: {
-      control: "select",
+      control: 'select',
       options: [
         ParagraphStyles.Regular,
         ParagraphStyles.Quote,
@@ -16,7 +16,7 @@ export default {
         ParagraphStyles.Bold,
       ],
     },
-    text: { control: "text" },
+    text: { control: 'text' },
   },
 } as ComponentMeta<typeof Paragraph>;
 

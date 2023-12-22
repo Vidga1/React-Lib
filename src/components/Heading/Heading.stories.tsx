@@ -1,10 +1,10 @@
-import React from "react";
-import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Heading } from "./Heading";
-import { heading } from "../../helpers/text";
+import React from 'react';
+import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { Heading } from './Heading';
+import { heading } from '../../helpers/text';
 
 export default {
-  title: "React Components Lib/Heading",
+  title: 'React Components Lib/Heading',
   component: Heading,
 } as ComponentMeta<typeof Heading>;
 

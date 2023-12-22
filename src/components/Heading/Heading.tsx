@@ -1,6 +1,6 @@
-import React, { FC } from "react";
-import "./Heading.css";
-import { heading } from "../../helpers/text";
+import React, { FC } from 'react';
+import './Heading.css';
+import { heading } from '../../helpers/text';
 
 export interface HeadingProps {
   level?: 1 | 2 | 3 | 4 | 5 | 6;

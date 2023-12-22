@@ -30,7 +30,7 @@ export const Image: FC<ImageProps> = ({
   );
 };
 
-const ImageExamples: FC = () => (
+export const ImageExamples: FC = () => (
   <div>
     <Image src={lion} alt="Lion" float={Float.Left} />
     <Image src={pantera} alt="Pantera" float={Float.Right} />

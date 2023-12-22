@@ -27,7 +27,7 @@ export const Paragraph: FC<ParagraphProps> = ({
   );
 };
 
-const ParagraphExamples: FC = () => {
+export const ParagraphExamples: FC = () => {
   return (
     <div>
       <Paragraph text={textLion} fontStyle={ParagraphStyles.Bold} />
@@ -37,5 +37,3 @@ const ParagraphExamples: FC = () => {
     </div>
   );
 };
-
-export default ParagraphExamples;

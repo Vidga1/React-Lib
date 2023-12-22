@@ -8,7 +8,7 @@ export interface HeadingProps {
 }
 
 export const Heading: FC<HeadingProps> = ({ level = 1, title = heading }) => {
-  const headingClass = `heading ${level}`; 
+  const headingClass = `heading ${level}`;
 
   return (
     <div data-testid="heading" className={headingClass}>

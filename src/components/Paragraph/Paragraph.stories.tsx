@@ -8,14 +8,21 @@ export default {
   component: Paragraph,
   argTypes: {
     fontStyle: {
-      control: 'select',
-      options: [ParagraphStyles.Regular, ParagraphStyles.Quote, ParagraphStyles.Underline, ParagraphStyles.Bold],
+      control: "select",
+      options: [
+        ParagraphStyles.Regular,
+        ParagraphStyles.Quote,
+        ParagraphStyles.Underline,
+        ParagraphStyles.Bold,
+      ],
     },
-    text: { control: 'text' },
+    text: { control: "text" },
   },
 } as ComponentMeta<typeof Paragraph>;
 
-const Template: ComponentStory<typeof Paragraph> = (args) => <Paragraph {...args} />;
+const Template: ComponentStory<typeof Paragraph> = (args) => (
+  <Paragraph {...args} />
+);
 
 export const Default = Template.bind({});
 Default.args = {

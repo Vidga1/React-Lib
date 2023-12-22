@@ -7,8 +7,8 @@ export default {
   component: Image,
   argTypes: {
     float: {
-      control: 'select',
-      options: [Float.Left, Float.Right ],
+      control: "select",
+      options: [Float.Left, Float.Right],
       defaultValue: Float.Left,
     },
   },
@@ -34,12 +34,12 @@ export const TigerImage = Template.bind({});
 TigerImage.args = {
   src: tiger,
   alt: "Picture with tiger",
-  float: Float.Left
+  float: Float.Left,
 };
 
 export const WolfImage = Template.bind({});
 WolfImage.args = {
   src: wolf,
   alt: "Picture with wolf",
-  float: Float.Right
+  float: Float.Right,
 };

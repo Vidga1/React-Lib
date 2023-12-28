@@ -1,0 +1,8 @@
+body {
+  background: linear-gradient(to right, #350f5c, #503285);
+}
+
+.details-container {
+  overflow: auto;
+  padding: 10px;
+}

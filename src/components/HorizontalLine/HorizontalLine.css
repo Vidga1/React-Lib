@@ -1,0 +1,15 @@
+hr {
+  height: 1px;
+}
+
+.solid-line {
+  border-top: 2px solid;
+}
+
+.double-line {
+  border-top: 3px double;
+}
+
+.dashed-line {
+  border-top: 2px dashed;
+}
